@@ -1,4 +1,4 @@
-In this lab, we need to run the HLS simulation for C++ code, and then implement the same function with Verilog code.
+In this lab, we need to run the HLS simulation for C++ code(.cpp, .h files), and then implement the same function with Verilog code(.v files).
 
 binary2bcd_double_dabble will get 8-bit binary input, then give 8-bit packed BCD outputs(00\~99) and 16-bit unpacked BCD outputs(0000\~0909). 
 
