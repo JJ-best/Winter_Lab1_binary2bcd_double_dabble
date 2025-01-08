@@ -20,7 +20,7 @@ wire [7:0] packed_bcd;
 wire [15:0] unpacked_bcd;
 
 // there you can read data from the solution file,and store in the register.
-reg [7:0] solution [1:99];
+reg [7:0] solution [0:99];
 initial begin
   $readmemb("solution.dat",solution);
 end
@@ -70,7 +70,7 @@ initial begin
     wait(rst_n == 0);
     wait(rst_n == 1);
     //auto check
-    for (j = 1; j <= 99; j = j + 1) begin //compare the solution with the simulation result.
+    for (j = 0; j <= 99; j = j + 1) begin //compare the solution with the simulation result.
         @(negedge clk);
         if (packed_bcd != solution[j][7:0]) begin
             error = error + 1;
