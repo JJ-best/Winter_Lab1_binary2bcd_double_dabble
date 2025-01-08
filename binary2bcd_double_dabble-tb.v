@@ -62,7 +62,6 @@ begin
     for (i = 0; i < LARGE_NUMBER; i = i + 1) begin
         @ (negedge clk) in_binary = in_binary + 1;
     end
-    
 end
 
 //check result
