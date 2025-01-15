@@ -26,10 +26,8 @@ initial begin
 end
 
 
-top_modeule  u_top_modeule (
+binary2bcd_double_dabble  u_top_modeule (
     .in_binary(in_binary[7:0]),
-    .clk(clk),
-    .rst_n(rst_n),
     .packed_bcd(packed_bcd[7:0]),
     .unpacked_bcd(unpacked_bcd[15:0])
 );
